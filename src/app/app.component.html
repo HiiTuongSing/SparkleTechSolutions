@@ -1,5 +1,48 @@
-<main>
-  <h1 class="text-3xl font-bold underline">Hello World!</h1>
-</main>
+<nav class="lg:w-3/4 h-12 flex items-center m-auto">
+  <a class="hover:bg-black hover:text-white px-2" routerLink="/"
+    ><h1 class="text-3xl font-bold underline">{{ title }}</h1></a
+  >
+  <ul class="flex mx-auto items-end">
+    <li>
+      <a class="hover:bg-black hover:text-white px-2" routerLink="/about"
+        >About</a
+      >
+    </li>
+    <li>
+      <a class="hover:bg-black hover:text-white px-2" routerLink="/pricing"
+        >Pricing</a
+      >
+    </li>
+    <li>
+      <a class="hover:bg-black hover:text-white px-2" routerLink="/product"
+        >Product</a
+      >
+    </li>
+  </ul>
+
+  <ul class="flex flex-end items-end">
+    <li class="text-2xl">
+      <a class="hover:bg-black hover:text-white px-2" routerLink="/about"
+        ><i class="fa-brands fa-square-facebook"></i
+      ></a>
+    </li>
+    <li class="text-2xl">
+      <a class="hover:bg-black hover:text-white px-2" routerLink="/pricing"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+    </li>
+    <li class="text-2xl">
+      <a class="hover:bg-black hover:text-white px-2" routerLink="/product"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </li>
+  </ul>
+</nav>
+<hr />
 
 <router-outlet />
+
+<footer>
+  <hr />
+  <h3>Footer here!</h3>
+</footer>
